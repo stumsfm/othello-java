@@ -5,13 +5,19 @@ Variable Reversi
 複数のリバーシ変種を実装可能なWebベースのボードゲームです。
 将来的に、Linux環境・DB連携への拡張を前提としています。
 
+##すぐ動かす手順
+動作環境:Java、SQLite、Eclipse/Pleiadesなど
+実行方法:Main.javaを実行すると、workspace/Main/board.htmlが出力される
+→ブラウザで開くと盤面確認が可能
+
 ##　現状
 - SQLiteに盤面(board_cell)を保存できるところまで確認済み
-- 8×8盤面の内部データ(char管理)
+- 8×8盤面の内部データはchar管理とし、座標は共に0始まり(0-7)
 - Java　→　HTML出力による盤面表示及びCSSによる盤面スタイル調整
 - Ecpipseで動作確認中
 
 ##　これからやりたいこと
+- クリック入力
 - 盤面の初期化/再開
 - 手番の管理
 - 勝敗判定
